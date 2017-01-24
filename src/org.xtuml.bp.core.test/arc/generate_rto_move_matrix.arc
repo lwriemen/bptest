@@ -19,7 +19,7 @@
 .// License for the specific language governing permissions and limitations under
 .// the License.
 .//=======================================================================
-.include "../org.xtuml.bp.core/arc/generate_RGO_resolution_methods.inc"
+.include "../../../bridgepoint/src/org.xtuml.bp.core/arc/generate_RGO_resolution_methods.inc"
 .function get_cells
   .param Inst_Ref rto
   .param Inst_Ref_Set test_rtos

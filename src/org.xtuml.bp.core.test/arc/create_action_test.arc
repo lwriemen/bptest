@@ -20,8 +20,8 @@
 .end if
 .//
 .include "${mc_archetypes}/arch_utils.inc"
-.include "../org.xtuml.bp.core/arc/cme_names.inc"
-.include "../org.xtuml.bp.core/arc/parse_chain.inc"
+.include "../../../bridgepoint/src/org.xtuml.bp.core/arc/cme_names.inc"
+.include "../../../bridgepoint/src/org.xtuml.bp.core/arc/parse_chain.inc"
 .//
 .//=====================================================================
 .//

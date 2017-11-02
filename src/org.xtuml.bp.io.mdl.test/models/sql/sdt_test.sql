@@ -2481,7 +2481,7 @@ if( empty p )
   i = PERSIST::commit();
   if( i != 0 )
     LOG::LogFailure( message:"Error commiting persistence information. Error code:" );
-    LOG::LogInteger( message:i );
+    LOG::LogInteger( message:"", i:i );
   end if;
 else
   LOG::LogInfo( message:"Found PEI data." );

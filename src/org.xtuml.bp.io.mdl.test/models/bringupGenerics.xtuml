@@ -333,7 +333,7 @@ i = NVS::checksum( first:1, second:2 );
 i = PERSIST::commit();
 if( i != 0 )
   LOG::LogFailure( message:"Error commiting persistence information. Error code is " );
-  LOG::LogInteger( message:i );
+  LOG::LogInteger( message:"", i:i );
 end if;
 
 Bridge UI::inform (message:"Generating creation event WOBJ2 to my_world");
@@ -1276,7 +1276,7 @@ if( empty wobjs )
   i = PERSIST::commit();
   if( i != 0 )
     LOG::LogFailure( message:"Error commiting persistence information. Error code is " );
-    LOG::LogInteger( message:i );
+    LOG::LogInteger( message:"", i:i );
   end if;
 else
   LOG::LogInfo( message:"Found NVS data." );

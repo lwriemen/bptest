@@ -119,7 +119,7 @@ JUNIT REPLACED - DTD PATH [
 <para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
 <para><programlisting>counter = RealizedClass::getCounter();
 LOG::LogInfo(message:&quot;Counter value&quot;); 
-LOG::LogInteger(message:counter);
+LOG::LogInteger(message:"", i:counter);
 </programlisting></para>
 </section>
 </section>
@@ -310,7 +310,7 @@ LOG::LogInteger(message:counter);
 <para><literallayout xml:space='preserve' class='monospaced'></literallayout></para>
 <para><programlisting>counter = RealizedClass::getCounter();
 LOG::LogInfo(message:&quot;Counter value&quot;); 
-LOG::LogInteger(message:counter);
+LOG::LogInteger(message:"", i:counter);
 </programlisting></para>
 </section>
 </section>

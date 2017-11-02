@@ -24,15 +24,6 @@ package lib;
 
 public class LOG {
 
-	// ========================================================================
-	// Bridge: LogInteger
-	// ========================================================================
-	public static void LogInteger(int ee_message) {
-
-		System.out.println("USERs LogInteger:  " + ee_message);
-
-	}
-
 	// ============================================================================
 	// Bridge: LogSuccess
 	// ============================================================================
@@ -75,6 +66,15 @@ public class LOG {
 	public static void LogTime(String ee_message, Object ee_t) {
 
 		System.out.println("USERs LogTime:  " + ee_t + " " + ee_message);
+
+	}
+
+	// ========================================================================
+	// Bridge: LogInteger
+	// ========================================================================
+	public static void LogInteger(String ee_message, int ee_i) {
+
+		System.out.println("USERs LogInteger:  " + ee_i + " " + ee_message);
 
 	}
 

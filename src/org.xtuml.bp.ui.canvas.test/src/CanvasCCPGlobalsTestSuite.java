@@ -19,6 +19,7 @@ import org.xtuml.bp.ui.canvas.test.CanvasCCPTestsSuite;
 import org.xtuml.bp.ui.canvas.test.CanvasCopyPasteTests;
 import org.xtuml.bp.ui.canvas.test.CanvasCopyTests;
 import org.xtuml.bp.ui.canvas.test.CanvasCutTests;
+import org.xtuml.bp.ui.canvas.test.CanvasMoveTests;
 
 import junit.framework.TestSuite;
 
@@ -29,6 +30,7 @@ import junit.framework.TestSuite;
 @Suite.SuiteClasses({
 	CanvasCCPTestsSuite.class,
 	CanvasCutTests.class,
+	CanvasMoveTests.class,
 	CanvasCopyTests.class,
 	CanvasCopyPasteTests.class,
 })

@@ -22,6 +22,7 @@
 import org.xtuml.bp.ui.canvas.test.CanvasCopyPasteTests;
 import org.xtuml.bp.ui.canvas.test.CanvasCopyTests;
 import org.xtuml.bp.ui.canvas.test.CanvasCutTests;
+import org.xtuml.bp.ui.canvas.test.CanvasMoveTests;
 import org.xtuml.bp.ui.canvas.test.CanvasStateMachineCopyPasteTests;
 import org.xtuml.bp.ui.canvas.test.ModelRecreationTests;
 
@@ -40,6 +41,8 @@ public class CanvasCCPResultSuite extends TestSuite {
     public CanvasCCPResultSuite() {
     	CanvasCutTests.generateResults = true;
     	addTestSuite(CanvasCutTests.class);
+    	CanvasMoveTests.generateResults = true;
+    	addTestSuite(CanvasMoveTests.class);
     	CanvasCopyTests.generateResults = true;
     	addTestSuite(CanvasCopyTests.class);
     	CanvasCopyPasteTests.generateResults = true;

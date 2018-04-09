@@ -26,6 +26,7 @@ import org.xtuml.bp.core.InterfaceReference_c;
 import org.xtuml.bp.core.Package_c;
 import org.xtuml.bp.core.PackageableElement_c;
 import org.xtuml.bp.core.Port_c;
+import org.xtuml.bp.core.Provision_c;
 import org.xtuml.bp.core.common.ClassQueryInterface_c;
 import org.xtuml.bp.core.ui.Selection;
 import org.xtuml.bp.test.common.OrderedRunner;
@@ -102,10 +103,10 @@ public class CanvasMoveTests extends CanvasTest {
 		
 		// Part 2: Now verify that cut is available on the element under the 
 		//         package that was create in the previous test.
-		Port_c portz = Port_c.getOneC_POOnR4010(comp1);
-		//sel.addToSelection(portz);
-        InterfaceReference_c interz = InterfaceReference_c.getManyC_IRsOnR4016(portz)[0];
-		sel.addToSelection(interz);
+		// NOTE: Adding Provision is how you add attached interfaces.
+		Provision_c pro = Provision_c.getOneC_POnR4009(InterfaceReference_c
+				.getManyC_IRsOnR4016(Port_c.getManyC_POsOnR4010(comp1)));
+		sel.addToSelection(pro);
 		assertTrue("Cut was not available.", UITestingUtilities.checkItemStatusInContextMenu(ce.getCanvas().getMenu(), "Cut", "", false));
 	}
 
